@@ -1,0 +1,27 @@
+Perfeito, Darlan!
+Vamos criar um backup simples e rápido empacotando o projeto inteiro (backend + frontend) em um único arquivo .zip.
+Eu vou te dar o comando considerando que:
+
+📂 Seu projeto está na pasta ~/cadastro_academia (backend e frontend estão aí dentro).
+O backend está na pasta ~/cadastro_academia/backend
+O frontend está na pasta ~/cadastro_academia/frontend
+
+Vá para a pasta onde está o projeto
+cd ~
+
+Rode o comando de backup (compactação)
+zip -r cadastro_academia_backup_$(date +%Y%m%d_%H%M).zip cadastro_academia
+
+O que ele faz:
+✅ Cria um arquivo .zip chamado por exemplo cadastro_academia_backup_20250508_1523.zip
+✅ Inclui tudo dentro da pasta cadastro_academia (backend + frontend)
+✅ Data e hora no nome para você saber quando foi feito
+
+Para listar o backup e confirmar
+ls -lh cadastro_academia_backup_*.zip
+
+Para restaurar um backup (se precisar no futuro)
+unzip cadastro_academia_backup_20250508_1523.zip
+
+sudo apt update
+sudo apt install zip unzip

@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0fff0;
+    padding: 20px;
+}
+h1, h2 {
+    color: #006400;
+}
+form input, form button {
+    margin: 5px;
+    padding: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+button:hover {
+    background-color: #45a049;
+}
